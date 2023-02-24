@@ -108,6 +108,7 @@ function App() {
       <div className='ContainerBanner'>
         <img src="src/img/logo/svg/logoSVG1horizontal.svg" className="logoBannerIndex"/>
       </div>
+      <div className='linha'></div>
       <Button
         className="mb-2"
         onClick={handleShowCreateModal}

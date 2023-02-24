@@ -17,6 +17,8 @@ html, body, #root {
   height: 320px;
   display: flex;
   align-items: center;
+  border-bottom: solid 3px #e0e0e0;
+  margin-bottom: 30px;
 }
 
 .logoBannerIndex{
@@ -27,4 +29,20 @@ html, body, #root {
 
 .td-acoes, .th-acoes{
   text-align: right;
+}
+
+@media (max-width: 1000px) {
+  .ContainerBanner{
+    height: 200px;
+  }
+  .logoBannerIndex{
+    width: auto;
+    height: 110px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .ContainerBanner{
+    height: 160px;
+  }
 }
