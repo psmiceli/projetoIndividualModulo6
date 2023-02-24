@@ -119,19 +119,19 @@ function App() {
           <tr>
             <th>Cliente</th>
             <th>Endereço</th>
-            <th>Plano</th>
-            <th>Ações</th>
+            <th className="text-center">Plano</th>
+            <th className='th-acoes'> </th>
           </tr>
         </thead>
 
         <tbody>
           {contents && contents.map(cont => (
             <tr key={cont.id}>
-              <td>{cont.titulo}</td>
-              <td>{cont.descricao}</td>
-              <td>{cont.porcentagem}</td>
-              <td>
-                <Button onClick={() => deleteContent(cont.id)} variant='danger'>
+              <td className='align-middle'>{cont.titulo}</td>
+              <td className='align-middle'>{cont.descricao}</td>
+              <td className='align-middle text-center'>{cont.porcentagem}</td>
+              <td className='td-acoes align-middle'>
+                <Button onClick={() => deleteContent(cont.id)} variant='danger' size="sm">
                   Excluir
                 </Button>
                 <Button
@@ -141,6 +141,7 @@ function App() {
                   }}
                   variant='warning'
                   className='m-1'
+                  size="sm"
                   >
                   Atualizar
                 </Button>

@@ -4,9 +4,9 @@ html, body, #root {
   background-color: #eeefee;
 }
 
-.conteudoPrincipal{
-  
-}
+/*.conteudoPrincipal{
+
+}*/
 
 .ContainerBanner{
   background-image: url("../src/img/banner1.png");
@@ -23,4 +23,8 @@ html, body, #root {
   width: auto;
   height: 120px;
   
+}
+
+.td-acoes, .th-acoes{
+  text-align: right;
 }
